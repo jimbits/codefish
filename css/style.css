@@ -67,11 +67,12 @@ h3.section-heading{
 }
 img.logo {
   width: 30%;
+  margin-right:-3rem;
 }
 .banner h1 {
   font-size: 4.25rem;
   line-height: 4.25rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   margin-right: -1rem;
 }
 
@@ -363,3 +364,18 @@ div.line {
 .margin-clear-bottom{
   margin-bottom:0;
 }
+/* 
+********************************************************************************************
+10. UTILITIES
+********************************************************************************************
+*/
+.dark-text{
+  color:#00c3e2;
+  font-weight: bold;
+  font-size:1.125rem;
+}
+.light-text-highlight{
+  color:red;
+  font-weight: 700;
+}
+ 
