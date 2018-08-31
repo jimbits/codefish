@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fish Edit</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/reboot.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="sitenav">
+    <ul class="icon-view">
+      <li><i class="material-icons">menu</i></li>
+      <li>
+        <h2>navigation</h2>
+      </li>
+      <li><i class="material-icons">settings</i></li>
+    </ul>
+    <ul class="list-view">
+      <li>Downloads</li>
+      <li>Help</li>
+      <li>FAQ</li>
+      <li>Extensions</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <header class="banner">
+    <img class="logo" src="img/logo-1.png" alt="">
+    <h1>Fish Edit</h1>
+    <p>the free code editor that scales</p>
+    <button class="download-trial button"><span>Download Free Unlimited Trial</span> <i class="fab fa-apple"></i> <i class="fab fa-windows"></i>
+      <i class="fab fa-linux"></i></button>
+    <p>Trial includes all FishHead features.</p>
+    <img src="img/compileify-screenshot.png" alt="">
+  </header>
+  <main>
+    <section class="compiler section-contents">
+      <header>
+        <h2 class="section-heading">Compile Everything</h2>
+        <p class="section-description">
+          With FishHead we can handel all of your preprocessing needs and out of the box you get build support for Sass, Less, Stylus,
+          Cssnext, Jade, Slim and Coffeescript.
+        </p>
+      </header>
+      <ul class="compile-types">
+        <li class="sass"><img src="img/sass-logo.png" alt="sass logo"></li>
+        <li class="coffeescript"><img src="img/coffeescript-logo.png" alt="coffee script logo"></li>
+        <li class="less"><img src="img/less-logo.png" alt="less logo"></li>
+        <li class="stylus"><img src="img/stylus-logo.png" alt="stylus logo"></li>
+        <li class="babel"><img src="img/babel-logo.png" alt="babel logo"></li>
+      </ul>
+    </section>
+
+    <section class="error-checking section-contents">
+      <header>
+        <h2 class="section-heading">Errors At a Glance</h2>
+        <p class="section-description">FishHead has a build in color pallette for showing errors. You can fully customize
+          the error checking handling and output from the Command Console.</p>
+      </header>
+      <img class="small-img-display box-shadow" src="img/error-message.png" alt="error message screen capture">
+    </section>
+
+
+    <section class="Live Reload section-contents">
+      <header>
+
+        <h2 class="section-heading">Live Reload</h2>
+        <p class="section-description">FishHead allows you to reload your browser automatically every time you save a file.
+          You can manage what files are compiled during the save process</p>
+
+      </header>
+      <div class="demo">
+        <div class="line"></div>
+        <img class="small-img-display box-shadow center" src="img/editor.gif" alt="">
+
+        <div class="reload">
+          <i id="rotation" class="fas fa-sync-alt"></i>
+        </div>
+
+        <div class="fake-browser is-window">
+
+          <div id="color-change-anima" class="live-reload-browser">
+            <h2>Fish Edit Live Preview</h2>
+            <p>Thanks for using FishHead Edit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contents minify-and-optimize">
+      <header>
+        <h2 class="section-heading">Minify & Optimize</h2>
+        <p class="section-description">FishHead can minify and optimize CSS, javascript & images with just one click. Install
+          and configure your own custom minify features in the setting panel.</p>
+      </header>
+
+
+
+
+      <div class="optimize-widget">
+        <div class="icon">
+          <i class="fas fa-copy "></i>
+        </div>
+        <h3 class="title">JS Concatenation</h3>
+        <p class="description">Concatenate and combine javascript files to reduce http requests.</p>
+      </div>
+
+      <div class="optimize-widget">
+        <div class="icon"><i class="fas fa-code"></i>
+        </div>
+        <h3 class="title">File Minification</h3>
+        <p class="description">Minify & Uglify files with ease to reduce bandwidth and load time.</p>
+      </div>
+
+      <div class="optimize-widget">
+        <div class="icon">
+          <i class="fas fa-image "></i>
+        </div>
+        <h3 class="title">Image Optimization</h3>
+        <p class="description">Losslessly optimize image to reduce bandwidth and load time.</p>
+      </div>
+
+    </section>
+
+
+       <section class="section-contents remote-inspect">
+        <header>
+          <h2 class="section-heading">Remote Inspect</h2>
+          <p class="section-description">FishHead has Chrome DevTools built into the console do you can use the inspector to remotely debug devices. </p>
+        </header>
+
+        <div class="demo">
+          <div class="line"></div>
+          <img class="small-img-display box-shadow center" src="img/inspector.png" alt="fish edit code editor inspector panel">
+          <img class="small-img-display access" src="img/icon.png" alt="">
+          <img class="small-img-display" src="img/phone-content.png" alt="fish edit code editor inspector panel">
+          </div>
+
+       </section>
+
+
+       <section class="section-contents build-and-deploy">
+         <header>
+           <h2 class="section-heading">Build And Deploy</h2>
+           <p class="section-description">Fish Edit can export files ready for deployment or It can just upload all the files via FTP or SFTP for you.</p>
+         </header>
+         <img class="small-img-display margin-clear-bottom" src="img/ftp.png" alt="fish edit ftp remote access panel">
+       </section>
+
+
+  </main>
+
+  <footer class="page-footer">
+       <header>
+         <h2 class="section-heading">Choose Your Side</h2>
+         <p class="section-description">Fish Edit comes with Dark and Light UI themes.</p>
+       </header>
+       <img class="small-img-display" src="img/light-theme.png" alt="">
+       <img class="small-img-display" src="img/dark-theme.png" alt="">
+
+       <h3 class="section-heading">Get FishEdit!</h3>
+
+       <button class="download-trial button"><span>Download Free Unlimited Trial</span> <i class="fab fa-apple"></i> <i class="fab fa-windows"></i>
+        <i class="fab fa-linux"></i></button>
+
+        <button class="donate button">
+          <span>Support FishEdit Now  $20.00</span>
+        </button>
+  </footer>
+  <script src="js/config.js "></script>
+  <script src="js/vendor/jquery/jquery.3.3.1.js "></script>
+
+</body>
+
+</html>

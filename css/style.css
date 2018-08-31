@@ -1,0 +1,365 @@
+body {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 100%;
+}
+/* 
+********************************************************************************************
+1. Typography
+********************************************************************************************
+*/
+.section-heading {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+h3.section-heading{
+  margin-bottom: 2rem;
+}
+.section-description {
+  font-size: 1rem;
+  color: lightslategray;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+/* 
+********************************************************************************************
+2. Site Navigation
+********************************************************************************************
+*/
+.sitenav {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  padding: 0.25rem;
+  width: 100%;
+  user-select: none;
+  background-color: #2d3e4f;
+  color: #fff;
+}
+
+.icon-view {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  height: 24px;
+}
+
+.list-view {
+  display: none;
+}
+/* 
+********************************************************************************************
+3. Jumbotron
+********************************************************************************************
+*/
+.banner {
+  width: 100%;
+  background-color: #2d3e4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  min-width: 360px;
+}
+img.logo {
+  width: 30%;
+}
+.banner h1 {
+  font-size: 4.25rem;
+  line-height: 4.25rem;
+  margin-top: -1.5rem;
+  margin-right: -1rem;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  opacity: 0.147;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.banner img:last-child {
+  width: 75%;
+  opacity: 1;
+}
+.banner p:last-of-type {
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+button {
+  font-family: inherit;
+}
+.button {
+  display: inline-block;
+  color: #fff;
+  background: #00c3e2;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  margin-bottom:1rem;
+}
+.button span {
+  padding-right: 1rem;
+}
+.button i {
+  padding-right: 0.25rem;
+}
+/* 
+********************************************************************************************
+4. CONTENT SECTION BASE STYLES
+********************************************************************************************
+*/
+.section-contents {
+  width: calc(100% - 16px);
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.section-contents header {
+  padding: 4.75rem 1rem;
+  padding-bottom: 0;
+  margin-bottom: 3rem;
+}
+.small-img-display {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: calc(100% - 1rem);
+  margin-bottom: 2rem;
+}
+.box-shadow {
+  box-shadow: 0 0 5px 2px rgba(45, 62, 79, 0.228);
+}
+/* 
+********************************************************************************************
+5. COMPILE EVERYTHING SECTION
+********************************************************************************************
+*/
+.compile-types li {
+  text-align: center;
+  padding: 1rem;
+}
+.compile-types img {
+  width: 35%;
+}
+.sass {
+  background-color: #e91d62;
+}
+.coffeescript {
+  background-color: #ff5521;
+}
+
+.less {
+  background-color: #3e50b4;
+}
+
+.cssnext {
+  background-color: #6739b6;
+}
+
+.babel {
+  background-color: #fec107;
+}
+.stylus {
+  background-color: #7cbb00;
+}
+/* 
+********************************************************************************************
+6. ERRORS AT A GLANCE SECTION
+********************************************************************************************
+*/
+#rotation {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 1.8s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.demo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.line {
+  border: 2px solid #cfd9db;
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  left: 50%;
+  right: 0;
+  top: 0%;
+  z-index: -1;
+}
+.reload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background: #00c3e2;
+  border-radius: 5px;
+}
+.fake-browser {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.fake-browser:before {
+  content: "";
+  display: block;
+  height: 45px;
+  border-radius: 5px 5px 0 0;
+  background: #ecf0f1;
+  border: 1px solid #dde4e6;
+}
+
+.fake-browser::after {
+  content: "http://fishhead.com";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  padding: 3px 5px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-size: 80%;
+  color: #999;
+}
+
+.live-reload-browser {
+  height: 235px;
+  background-color: rgb(252, 252, 252);
+  padding: 20px;
+  border: 1px solid #dde4e6;
+  border-top: none;
+  -webkit-animation: color-change 4.23s infinite;
+  animation: color-change 6.75s infinite;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  50% {
+    background-color: tomato;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+.live-reload-browser h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+.live-reload-browser p {
+  text-align: left;
+  padding: 0;
+}
+/* 
+********************************************************************************************
+7. MINIFY AND OPTIMIZE SECTION
+********************************************************************************************
+*/
+.optimize-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.optimize-widget .icon {
+  margin-bottom: 1rem;
+}
+.optimize-widget .title {
+  font-size: 1.25rem;
+  margin-bottom: 0rem;
+  color: #00c3e2;
+}
+.optimize-widget .description {
+  font-size: 0.9rem;
+  color: lightslategray;
+  opacity: 0.625;
+  text-align: center;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 1.3rem;
+  background: #00c3e2;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+********************************************************************************************
+8. REMOTE DEBUGGING
+********************************************************************************************
+*/
+.build-and-deploy{
+  margin-bottom:0;
+}
+.access{
+  width:15%;
+}
+/* 
+********************************************************************************************
+9. PAGE FOOTER
+********************************************************************************************
+*/
+.page-footer{
+  padding:5rem 0;
+  background-color:#313e4e;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer .section-heading, .page-footer .section-description{
+  color:#fff;
+}
+.page-footer header{
+  margin-bottom: 2rem;
+}
+.donate{
+
+}
+
+.margin-clear-bottom{
+  margin-bottom:0;
+}
