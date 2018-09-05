@@ -83,22 +83,36 @@ img.logo {
   text-align: center;
   margin-bottom: 2rem;
 }
-.banner img:last-child {
+.code-screen {
   width: 75%;
   opacity: 1;
 }
-.banner p:last-of-type {
-  font-size: 0.85rem;
-  margin-bottom: 2rem;
+ 
+.download-trial{
+    background: #00c3e2;
 }
-button {
-  font-family: inherit;
+.download-trial:hover{
+  background:rgb(7, 101, 135);
 }
+.purchase-extensions{
+  background:rgb(184, 34, 34);
+}
+.purchase-extensions:hover{
+  background:rgb(164, 20, 4);
+}
+.purchase-extensions img{
+  height:1.5rem;
+  margin:0;
+  padding:0;
+}
+
 .button {
+  text-decoration: none;
+  width:90%;
+  font-family: inherit;
   display: inline-block;
   color: #fff;
-  background: #00c3e2;
-  height: 45px;
+  user-select: none;
   line-height: 45px;
   padding: 0 10px;
   border-radius: 25px;
@@ -110,7 +124,7 @@ button {
   padding-right: 1rem;
 }
 .button i {
-  padding-right: 0.25rem;
+  padding-right: 0.35rem;
 }
 /* 
 ********************************************************************************************
@@ -183,7 +197,7 @@ button {
   animation: rotating 1.8s linear infinite;
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+@keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -266,7 +280,7 @@ div.line {
   animation: color-change 6.75s infinite;
 }
 
-@-webkit-keyframes color-change {
+@keyframes color-change {
   0% {
     background-color: white;
     color: black;
@@ -358,9 +372,7 @@ div.line {
 .page-footer header{
   margin-bottom: 2rem;
 }
-.donate{
-
-}
+ 
 
 .margin-clear-bottom{
   margin-bottom:0;
