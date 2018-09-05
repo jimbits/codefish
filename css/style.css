@@ -6,6 +6,12 @@ body {
   line-height: 1.5;
   font-size: 100%;
 }
+
+ main{
+    max-width: 1200px;
+    width:95%;
+    margin: 0 auto;
+  }
 /* 
 ********************************************************************************************
 1. Typography
@@ -85,26 +91,26 @@ img.logo {
 }
 .code-screen {
   width: 75%;
+  max-width: 1200px;
   opacity: 1;
 }
  
 .download-trial{
     background: #00c3e2;
 }
+.theme-store{
+  margin-top:2rem;
+}
 .download-trial:hover{
   background:rgb(7, 101, 135);
 }
-.purchase-extensions{
+.purchase-extensions, .theme-store{
   background:rgb(184, 34, 34);
 }
-.purchase-extensions:hover{
+.purchase-extensions:hover, .theme-store:hover{
   background:rgb(164, 20, 4);
 }
-.purchase-extensions img{
-  height:1.5rem;
-  margin:0;
-  padding:0;
-}
+ 
 
 .button {
   text-decoration: none;
@@ -135,7 +141,7 @@ img.logo {
 .section-contents {
   width: calc(100% - 16px);
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .section-contents header {
   padding: 4.75rem 1rem;
@@ -159,7 +165,6 @@ img.logo {
 */
 .compile-types li {
   text-align: center;
-  padding: 1rem;
 }
 .compile-types img {
   width: 35%;
@@ -175,7 +180,7 @@ img.logo {
   background-color: #3e50b4;
 }
 
-.cssnext {
+.css-next {
   background-color: #6739b6;
 }
 
@@ -215,6 +220,10 @@ img.logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.phone{
+  width:50%;
+    max-width:250px;
 }
 div.line {
   border: 2px solid #cfd9db;
@@ -389,7 +398,7 @@ div.line {
   font-size:1.125rem;
 }
 .light-text-highlight{
-  color:red;
+  color:rgb(255, 0, 0);
   font-weight: 700;
 }
  
@@ -399,6 +408,26 @@ div.line {
 Media Queries
 ********************************************************************************************
 */
+@media(min-width:460px){
+  .compile-types{
+    display:flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .compile-types li{      
+    flex: 1 1 calc(50%); 
+    padding: 2rem 0;
+   
+  }
+  .animated-editor{
+    max-width: 380px;
+  }
+ .dark-theme, .light-theme{
+     width:60%;
+     max-width:500px;
+   }
+
+}
 @media (min-width: 768px) { 
   .icon-view{
     display:none;
@@ -417,4 +446,30 @@ Media Queries
   .site-link:last-of-type{
     margin-left:auto;
   }
+ 
+  .compile-types li{      
+    flex: 0 1 calc(50% - 0.725rem); 
+    margin-bottom:1.5rem;    
+  }
+  .section-contents{
+    width:80%;
+  }
+ 
+  
 }
+
+@media (min-width: 992px) { 
+ 
+   .compile-types li{      
+    flex: 0 1 calc(33.333% - 12px);    
+  }
+  .section-contents h2{
+    font-size: 4rem;
+  }
+ }
+
+ @media (min-width: 1200px) {
+ 
+ 
+ 
+ }
