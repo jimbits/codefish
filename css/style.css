@@ -109,6 +109,7 @@ img.logo {
 .button {
   text-decoration: none;
   width:90%;
+  max-width: 400px;
   font-family: inherit;
   display: inline-block;
   color: #fff;
@@ -392,3 +393,28 @@ div.line {
   font-weight: 700;
 }
  
+
+/* 
+********************************************************************************************
+Media Queries
+********************************************************************************************
+*/
+@media (min-width: 768px) { 
+  .icon-view{
+    display:none;
+  }
+  .list-view{
+   display:flex;
+   justify-content:center;
+   margin-bottom:1.5rem;
+  }
+  .site-link{
+  margin-right: 1.5rem;
+  }
+  .site-link:first-of-type{
+    margin-right:auto;
+  }
+  .site-link:last-of-type{
+    margin-left:auto;
+  }
+}
